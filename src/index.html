@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en, ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="./assets/images/logos/Fav-icon.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script module defer src="./script.js"></script>
+
+    <title>Paprika Cover-band</title>
+  </head>
+  <body>
+    <!-- FORM WINDOW -->
+    <div class="form-container hide">
+      <form class="form" action="">
+        <div class="form-inner">
+          <p>Заполните форму, и мы Вам перезвоним</p>
+          <input
+            class="form-input input-name"
+            type="text"
+            placeholder="Ваше имя"
+          />
+        </div>
+
+        <div class="form-inner">
+          <input
+            class="form-input input-date"
+            type="text"
+            placeholder="Планируемая дата мероприятия"
+          />
+        </div>
+
+        <div class="form-inner">
+          <textarea
+            cols="30"
+            rows="10"
+            class="form-input input-about"
+            type="text"
+            placeholder="Расскажите немного о мероприятии"
+          >
+          </textarea>
+        </div>
+
+        <button class="button">отправить письмо</button>
+      </form>
+    </div>
+    <!-- NAVIGATION -->
+
+    <header class="header">
+      <div class="logo">
+        <img
+          class="link logo-image"
+          src="./assets/images/logos/Brand-logo.png"
+          alt="Paprika cover-band logo"
+        />
+      </div>
+
+      <!-- MOBILE MENU -->
+      <div class="mobile-menu">
+        <botton class="button button-mobile-menu">Меню</botton>
+      </div>
+
+      <div class="links">
+        <a href="#" class="link link-to-features">о нас</a>
+        <a href="#" class="link link-to-repertoir">репертуар</a>
+        <a href="#" class="link link-to-reviews">отзывы</a>
+        <div class="popup">
+          <p class="link popup-title">соц. сети</p>
+          <div class="popup--contact-links hide">
+            <div class="popup--contact-link" href="https://vk.com/paprikband">
+              <img
+                class="VKlogo"
+                src="./assets/images/logos/VK_Compact_Logo_(2021-present).svg.webp"
+                alt=""
+              />
+            </div>
+            <div
+              class="popup--contact-link"
+              href="https://instagram.com/paprikaband_izh?igshid=NTc4MTIwNjQ2YQ=="
+            >
+              <img
+                class="Insta-logo"
+                src="./assets/images/logos/Instagram-Logo.wine.svg"
+                alt=""
+              />
+            </div>
+            <div
+              class="popup--contact-link"
+              href="https://www.youtube.com/@paprika2619"
+            >
+              <img
+                class="YouTube-logo"
+                src="./assets/images/logos/YouTube-Icon-Full-Color-Logo.wine.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <a href="#" class="cta-link cta">связаться</a>
+      </div>
+    </header>
+
+    <!-- SECTION HERO -->
+
+    <section class="section--hero">
+      <div class="section--hero--inner">
+        <h2 class="suptitle">кавер-группа</h2>
+        <h1 class="title">Papr<span class="hightlight">i</span>ka</h1>
+        <button class="button cta-button">узнай больше</button>
+      </div>
+      <video
+        class="video"
+        src="./assets/videos/Brand-video.mp4"
+        autoplay="true"
+        muted="true"
+        loop="true"
+      ></video>
+    </section>
+
+    <!-- SECTION FEATURE -->
+
+    <section class="section section--features">
+      <div class="container">
+        <div class="grid--2-cols">
+          <div class="about-section">
+            <p class="section-suptitle">кое-что, что вы хотите...</p>
+            <h2 class="section-title">знать о нас</h2>
+          </div>
+
+          <div class="feature-info" data-index="1">
+            <h3 class="feature-title">Музыка - это наша профессия</h3>
+            <p class="feature-text">
+              Мы работаем с 2018 года. За нашими плечами более
+              <span class="hightlight">200</span> мероприятий - от больших
+              концертов на открытых площадках городов, до небольших, но не менее
+              незабываемых семейных праздников!
+            </p>
+          </div>
+
+          <div class="feature-info hide" data-index="2">
+            <h3 class="feature-title">Мы любим пошуметь, но...</h3>
+            <p class="feature-text">
+              <span class="hightlight">Готовы подстроиться</span> под атмосферу
+              любого мероприятия. Наше оборудование и опыт позволяют нам
+              провести как громкую и яркую программу, так и не оставить
+              слушателей равнодушными к нежному и уютному материаллу.
+            </p>
+          </div>
+
+          <div class="feature-info hide" data-index="3">
+            <h3 class="feature-title">Мы воплотим Вашу задумку</h3>
+            <p class="feature-text">
+              Если вы готовите музыкальный подарок, хотите спеть или даже
+              сыграть с нами, считаете необходимым, чтобы прозвучали ваши
+              любимые композиции - смело обращайтесь к нам. <br />
+              <span class="hightlight">Мы поможем,</span>
+              вплоть до отдельной репетиции с Вами!
+            </p>
+          </div>
+
+          <div class="feature-info hide" data-index="4">
+            <h3 class="feature-title">Мы хотим звучать хорошо, и...</h3>
+            <p class="feature-text">
+              Имеем возможность привезти на площадку
+              <span class="hightlight">собственное оборудование</span> -
+              звуковое и световое. С радостью поучаствуем в организации
+              мероприятия - поможем советом или рекомендацией.
+            </p>
+          </div>
+
+          <div class="features">
+            <div data-index="1" class="feature-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="svg svg--group"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"
+                />
+              </svg>
+            </div>
+
+            <div data-index="2" class="feature-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="svg svg--musical-note"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z"
+                />
+              </svg>
+            </div>
+
+            <div data-index="3" class="feature-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="svg svg--puzzle"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 01-.657.643 48.39 48.39 0 01-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 01-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 00-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 01-.642 5.056c1.518.19 3.058.309 4.616.354a.64.64 0 00.657-.643v0c0-.355-.186-.676-.401-.959a1.647 1.647 0 01-.349-1.003c0-1.035 1.008-1.875 2.25-1.875 1.243 0 2.25.84 2.25 1.875 0 .369-.128.713-.349 1.003-.215.283-.4.604-.4.959v0c0 .333.277.599.61.58a48.1 48.1 0 005.427-.63 48.05 48.05 0 00.582-4.717.532.532 0 00-.533-.57v0c-.355 0-.676.186-.959.401-.29.221-.634.349-1.003.349-1.035 0-1.875-1.007-1.875-2.25s.84-2.25 1.875-2.25c.37 0 .713.128 1.003.349.283.215.604.401.96.401v0a.656.656 0 00.658-.663 48.422 48.422 0 00-.37-5.36c-1.886.342-3.81.574-5.766.689a.578.578 0 01-.61-.58v0z"
+                />
+              </svg>
+            </div>
+
+            <div data-index="4" class="feature-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="svg svg--speaker"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION REPERTOIR -->
+
+    <section class="section section--repertoir">
+      <div class="about-section">
+        <p class="section-suptitle">вам будет из чего выбрать</p>
+        <h2 class="section-title">репертуар</h2>
+      </div>
+      <div class="container">
+        <div class="grid--2-cols">
+          <div class="repertoir">
+            <div class="repertoir-text">
+              <ul class="repertoir-list">
+                <li class="category">Песни 80-е</li>
+                <li>
+                  <span class="author">Браво</span> - это за окном рассвет
+                </li>
+                <li><span class="author">Машина Времени</span> - Мой друг</li>
+                <li><span class="author">Антонов</span> - Летящей походкой</li>
+                <li><span class="author">Браво</span> - Любите девушки</li>
+                <li><span class="author">Браво</span> - Я то что надо</li>
+                <li><span class="author">Браво</span> - Вася</li>
+                <li><span class="author">Песни 90-е</span></li>
+                <li><span class="author">Reflex</span> - танцы</li>
+                <li><span class="author">Руки вверх</span> - 18 мне уже</li>
+                <li><span class="author">Звери</span> - Районы-кварталы</li>
+                <li><span class="author">Леприконсы</span> - Хали-Гали</li>
+                <li><span class="author">Серебро</span> - Мама-Люба</li>
+                <li><span class="author">Zdob si zdub</span> - Видели Ночь</li>
+                <li><span class="author">Чичерина</span> - Ту-лу-ла</li>
+                <li><span class="author">Жуки</span> - Танкист</li>
+                <li><span class="author">А-мега</span> - Лететь</li>
+                <li><span class="author">Мумий тролль</span> - Медведица</li>
+                <li><span class="author">Bon Jovi</span> - It's my life</li>
+                <li>
+                  <span class="author">Звери</span> - Все что тебя касается
+                </li>
+                <li><span class="author">Звери</span> - Танцуй</li>
+                <li><span class="author">Ленинград</span> - Мамба</li>
+                <li><span class="author">Ленинград</span> - WWW</li>
+                <li>
+                  <span class="author">Отпетые мошеники</span> - Люби меня люби
+                </li>
+                <li>
+                  <span class="author">Кузьмин</span> - Красотка (Rock n Roll
+                  Version)
+                </li>
+                <li><span class="author">Леонид Агутин</span> - Хоп-хей</li>
+                <li><span class="author">Братья гримм</span> - Ресницы</li>
+                <li><span class="author">Король и шут</span> - Лесник</li>
+                <li>
+                  <span class="author">Звери</span> - Просто такая сильная
+                  любовь
+                </li>
+                <li><span class="author">Звери</span> - Дожди пистолеты</li>
+                <li><span class="author">Сплин</span> - Выхода нет</li>
+                <li><span class="author">Руки Вверх</span> - Крошка Моя</li>
+                <li><span class="author">Сплин</span> - Мое сердце</li>
+                <li><span class="author">Жуки</span> - Батарейка</li>
+                <li>
+                  <span class="author">Григорий Лепс</span> - Я счастливый
+                </li>
+                <li>
+                  <span class="author">Григорий Лепс</span> - Самый лучший день
+                </li>
+                <li>
+                  <span class="author">Звери</span> - Брюнетки и блондинки
+                </li>
+                <li class="category">Современные и 00-е песни</li>
+                <li><span class="author">Лобода</span> - Суперзвезда</li>
+                <li><span class="author">Градусы</span> - Голая</li>
+                <li><span class="author">IOWA</span> - Бьет бит</li>
+                <li><span class="author">Мот</span> - День и ночь</li>
+                <li><span class="author">Jan Hallib</span> - Если че я баха</li>
+                <li><span class="author">SEREBRO</span> - Между нами любовь</li>
+                <li>
+                  <span class="author">IOWA</span> - Песня простая (Dance mix)
+                </li>
+                <li>
+                  <span class="author">Vanilla Sky</span> - Звенит январская
+                  вьюга (Rock Mix)
+                </li>
+                <li><span class="author">Градусы</span> - Кто ты</li>
+                <li><span class="author">Лазарев</span> - Это все она</li>
+                <li>
+                  <span class="author">Артик и Асти</span> - Никому не отдам
+                </li>
+                <li>
+                  <span class="author">Тима Белорусских</span> - Незабудка
+                </li>
+                <li><span class="author">Мумий Тролль</span> - Невеста</li>
+                <li><span class="author">Макс Корж</span> - Жить в кайф</li>
+                <li><span class="author">Иван Дорн</span> - Ненавижу</li>
+                <li><span class="author">Ленинград</span> - Вояж</li>
+                <li><span class="author">2 Маши</span> - Босая</li>
+                <li><span class="author">Билан</span> - Молния</li>
+                <li><span class="author">Zivert и Мот</span> - Паруса</li>
+                <li><span class="author">LTB</span> - Uno</li>
+                <li><span class="author">Пошлая Молли</span> - Нон стоп</li>
+                <li><span class="author">Mary Gu</span> - Косички</li>
+                <li>
+                  <span class="author">Ваня Дмитриенко</span> - Венера-Юпитер
+                </li>
+                <li><span class="author">Баста</span> - Медлячок</li>
+                <li>
+                  <span class="author">Тима Беллоруских</span> - Мокрые кроссы
+                </li>
+                <li><span class="author">LTB</span> - Faradenza</li>
+                <li>
+                  <span class="author">Добро</span> - Юность (Звук поставим на
+                  всю)
+                </li>
+                <li><span class="author">Animalджаз</span> - Три полоски</li>
+                <li>
+                  <span class="author">Люся Чеботина</span> - Солнце Монако
+                </li>
+                <li>
+                  <span class="author">Galibri & Mavik</span> - Федерико Феллини
+                </li>
+                <li>
+                  <span class="author">Макс Корж</span> - Небо поможет Вам
+                </li>
+                <li>
+                  <span class="author">CHEBANOV</span> - Ночь (Cover Андрей
+                  Губин)
+                </li>
+                <li>
+                  <span class="author">Антон Токарев</span> - Седьмой лепесток
+                  (Cover Hi-Fi)
+                </li>
+                <li><span class="author">Максим</span> - Знаешь ли ты</li>
+                <li>
+                  <span class="author">Земфира</span> - знак бесконечность
+                </li>
+                <li class="category">Зарубежные песни</li>
+                <li><span class="author">Shaking Blue</span> - Venus</li>
+                <li><span class="author">Alice Merton</span> - No roots</li>
+                <li><span class="author">Roxete</span> - Sleeping in my car</li>
+                <li>
+                  <span class="author">Beach boys</span> - California dreaming
+                </li>
+                <li>
+                  <span class="author">Limp Bizkit</span> - Behind blue eyes
+                  (The Who cover)
+                </li>
+                <li>
+                  <span class="author">Måneskin</span> - I Wanna Be Your Slave
+                </li>
+                <li>
+                  <span class="author">The Baseballs</span> - Umbrella (rock n
+                  roll Version)
+                </li>
+                <li><span class="author">Complicated</span> - Avril Lavigne</li>
+                <li><span class="author">Alvaro solar</span> - Sofia</li>
+                <li><span class="author">Cranbireins</span> - Zombie</li>
+                <li>
+                  <span class="author">Nickelback</span> - How you remind me
+                </li>
+                <li>
+                  <span class="author">George Harrison</span> - I Got My Mind
+                  Set On
+                </li>
+                <li><span class="author">Chris Isaak</span> - Wicked game</li>
+                <li><span class="author">RHCP</span> - Californication</li>
+                <li><span class="author">Dua Lipa</span> - Don't Start Now</li>
+                <li><span class="author">Bon Jovi</span> - Its My Life</li>
+                <li><span class="author">Blur</span> - Song 2</li>
+                <li><span class="author">Bonney M</span> - Sunny</li>
+                <li><span class="author">Ed sheer an</span> - Thinking loud</li>
+                <li>
+                  <span class="author">Nirvana</span> - Smells like teen spirit
+                </li>
+                <li><span class="author">Queen</span> - We will rock you</li>
+                <li>
+                  <span class="author">Taylor Swift</span> - I Knew You Were
+                  Trouble
+                </li>
+              </ul>
+            </div>
+            <button class="button button--download-repertoir">
+              скачать репертуар
+            </button>
+          </div>
+          <div class="gallery">
+            <div class="grid--4-cols">
+              <div class="image-container">
+                <img
+                  class="gallery-img"
+                  src="./assets/images/galleryPhotos/600x400.svg"
+                  alt=""
+                />
+              </div>
+              <div class="image-container">
+                <img
+                  class="gallery-img"
+                  src="./assets/images/galleryPhotos/600x400.svg"
+                  alt=""
+                />
+              </div>
+              <div class="image-container">
+                <img
+                  class="gallery-img"
+                  src="./assets/images/galleryPhotos/600x400.svg"
+                  alt=""
+                />
+              </div>
+              <div class="image-container">
+                <img
+                  class="gallery-img"
+                  src="./assets/images/galleryPhotos/600x400.svg"
+                  alt=""
+                />
+              </div>
+              <div class="image-container">
+                <img
+                  class="gallery-img"
+                  src="./assets/images/galleryPhotos/600x400.svg"
+                  alt=""
+                />
+              </div>
+              <div class="image-container">
+                <img
+                  class="gallery-img"
+                  src="./assets/images/galleryPhotos/600x400.svg"
+                  alt=""
+                />
+              </div>
+              <div class="image-container">
+                <img
+                  class="gallery-img"
+                  src="./assets/images/galleryPhotos/600x400.svg"
+                  alt=""
+                />
+              </div>
+              <div class="image-container">
+                <img
+                  class="gallery-img"
+                  src="./assets/images/galleryPhotos/600x400.svg"
+                  alt=""
+                />
+              </div>
+              <div class="image-container">
+                <img
+                  class="gallery-img"
+                  src="./assets/images/galleryPhotos/600x400.svg"
+                  alt=""
+                />
+              </div>
+              <div class="image-container">
+                <img
+                  class="gallery-img"
+                  src="./assets/images/galleryPhotos/600x400.svg"
+                  alt=""
+                />
+              </div>
+              <div class="image-container">
+                <img
+                  class="gallery-img"
+                  src="./assets/images/galleryPhotos/600x400.svg"
+                  alt=""
+                />
+              </div>
+              <div class="image-container">
+                <img
+                  class="gallery-img"
+                  src="./assets/images/galleryPhotos/600x400.svg"
+                  alt=""
+                />
+              </div>
+              <div class="image-container">
+                <img
+                  class="gallery-img"
+                  src="./assets/images/galleryPhotos/600x400.svg"
+                  alt=""
+                />
+              </div>
+              <div class="image-container">
+                <img
+                  class="gallery-img"
+                  src="./assets/images/galleryPhotos/600x400.svg"
+                  alt=""
+                />
+              </div>
+              <div class="image-container">
+                <img
+                  class="gallery-img"
+                  src="./assets/images/galleryPhotos/600x400.svg"
+                  alt=""
+                />
+              </div>
+              <div class="image-container">
+                <img
+                  class="gallery-img"
+                  src="./assets/images/galleryPhotos/600x400.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION REVIEWS -->
+
+    <section class="section section--reviews">
+      <div class="container">
+        <div class="about-section">
+          <p class="section-suptitle">люди говорят о нас</p>
+          <h2 class="section-title">отзывы</h2>
+        </div>
+
+        <div class="review">
+          <div class="slider-buttons">
+            <div class="slider-button slider-button--left">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="svg svg--chevron-left"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </div>
+            <div class="slider-button slider-button--right">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="svg svg--chevron-right"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div class="slide" data-index="1">
+            <div class="about-reviewer">
+              <div class="reviewer-photo">
+                <img
+                  src="./assets/images/reviewersPhotos/Arina Docenko.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="name-and-link">
+                <h3 class="reviewer-name">Арина Доценко</h3>
+              </div>
+            </div>
+            <p class="review-text">
+              Хочу сказать Спасибо огромное вам за праздник! С точки зрения
+              организации очень <span class="hightlight">легко работать</span>,
+              сразу нашли общий язык. Само выступление было яркое и
+              впечатляющее, народ пел и танцевал вместе с вами! Спасибо за это
+              😍 Ну и сама команда, повезло поработать лично с вами, очень
+              интересные и классные! Очень надеюсь на будущую совместную работу
+              😌
+            </p>
+          </div>
+
+          <div class="slide hide" data-index="2">
+            <div class="about-reviewer">
+              <div class="reviewer-photo">
+                <img
+                  src="./assets/images/reviewersPhotos/Anna Melnikova.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="name-and-link">
+                <h3 class="reviewer-name">Анюта Мельникова</h3>
+              </div>
+            </div>
+            <p class="review-text">
+              Это невероятно крутые и талантливые ребята! У меня была интересная
+              задумка, которую мы
+              <span class="hightlight">совместно воплотили</span> в жизнь! И это
+              было 🔥🔥🔥 с группой мы много репетировали, теперь даже грустно,
+              что наши репетиции окончены. Но точно могу сказать, что абсолютно
+              все музыканты профессионалы своего дела! Очень
+              <span class="hightlight">ответственный подход</span> к работе и
+              несмотря на некоторые трудности, которые я им иногда создавала,
+              все прошло И Д Е А Л Ь Н О! Обожаю вас ребята! Обязательно буду
+              приглашать еще ❤️
+            </p>
+          </div>
+
+          <div class="slide hide" data-index="3">
+            <div class="about-reviewer">
+              <div class="reviewer-photo">
+                <img
+                  src="./assets/images/reviewersPhotos/Andrey Lenchenko.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="name-and-link">
+                <h3 class="reviewer-name">Андрей Ленченко</h3>
+              </div>
+            </div>
+            <p class="review-text">
+              Понравился подход ребят. Заранее обговорили репертуар. Алексей
+              уточнил предпочтения. Все гости танцевали нон-стоп на протяжении
+              всего выступления группы. Тут попадание было 10 из 10. Многие
+              вопросы по организации Алексей взял на себя, и я для себя понял,
+              что <span class="hightlight">клиентоориентированность</span> для
+              этой группы-это действительно не просто пустое слово. Попросил
+              выучить 2 песни - с чем ребята с радостью согласились и сделали
+              это очень круто.
+              <span class="hightlight">Подарок для родителей удался.</span>
+              Гостям, и самое главное нам - очень понравилось. Надеюсь что и вам
+              тоже!
+            </p>
+          </div>
+
+          <div class="slide hide" data-index="4">
+            <div class="about-reviewer">
+              <div class="reviewer-photo">
+                <img
+                  src="./assets/images/reviewersPhotos/Evgenya Shilyaeva.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="name-and-link">
+                <h3 class="reviewer-name">Евгения Шиляева</h3>
+              </div>
+            </div>
+            <p class="review-text">
+              Хочу выразить огромную благодарность группе Paprika за такое
+              зажигательное выступление. Было бесконечно весело и драйвово!
+              Особая благодарность за
+              <span class="hightlight">индивидуальный подход,</span> все песни
+              заранее обсуждались, по нашей просьбе даже были выучены несколько
+              песен. Танцевали все, даже те, кто не особо любит танцевать 😊
+              Очень вами довольны!
+              <span class="hightlight">Все в полнейшем восторге!</span> Успехов
+              и продвижения вам!
+            </p>
+          </div>
+        </div>
+
+        <div class="dots">
+          <div class="dot dot-active" data-index="1"></div>
+          <div class="dot" data-index="2"></div>
+          <div class="dot" data-index="3"></div>
+          <div class="dot" data-index="4"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION CTA and FOOTER -->
+
+    <section class="section section-cta">
+      <div class="container">
+        <h2 class="cta-text">
+          Живая музыка украшает любой праздник. Мы поможем Вам сделать это
+          качественно
+        </h2>
+        <button class="button cta-button cta">связаться с нами</button>
+      </div>
+      <footer class="footer">
+        <div class="footer-logo">
+          <img
+            class="logo"
+            src="./assets/images/logos/Brand-logo.png"
+            alt="Paprika cover-band logo"
+          />
+        </div>
+        <div class="footer-text">
+          <p>
+            тел: +7 228 228 1337 &copyPaprikaCoverBand. Developed by
+            <a class="link" href="https://github.com/someTrickyCase"
+              >@someTrickyCase</a
+            >
+          </p>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>

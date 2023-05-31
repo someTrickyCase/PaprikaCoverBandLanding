@@ -1,0 +1,26 @@
+{
+  "name": "paprikalanding",
+  "version": "1.0.0",
+  "description": "paprika cover-band landing page",
+  "main": "./src/script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack serve"
+  },
+  "author": "@someTrickyCase",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.21.5",
+    "babel-loader": "^9.1.2",
+    "html-webpack-plugin": "^5.5.1",
+    "sass-loader": "^13.3.0",
+    "webpack": "^5.83.1",
+    "webpack-cli": "^5.1.1"
+  },
+  "dependencies": {
+    "html-loader": "^4.2.0",
+    "sass": "^1.62.1",
+    "webpack-dev-server": "^4.15.0"
+  }
+}

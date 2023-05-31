@@ -1,0 +1,243 @@
+@import "./variables.scss";
+
+@mixin centralizeChildrens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin brightShadow {
+  box-shadow: 0px 2px 8px $brightShineColor;
+}
+
+@mixin brightShadowDown {
+  box-shadow: 0px 4px 8px 0px $brightShadowColor;
+}
+
+@mixin brightShadowTakeOf {
+  box-shadow: 0px 6px 14px 2px $brightShadowColorTakeOf;
+}
+
+@mixin fontQuicksand {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  color: $whiteColor;
+}
+
+@mixin fontMontserratAlternates {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  color: $whiteColor;
+}
+
+// ********************
+// Queries
+// ********************
+@mixin for-size-1344px {
+  @media (max-width: 84em) {
+    html {
+      font-size: 59% !important;
+    }
+  }
+}
+
+@mixin for-size-1248px {
+  @media (max-width: 78em) {
+    html {
+      font-size: 56% !important;
+    }
+
+    .repertoir,
+    .gallery {
+      height: 60rem !important;
+    }
+
+    .container {
+      max-width: 110rem !important;
+    }
+
+    .feature-item {
+      height: 20rem;
+      width: 17rem;
+    }
+  }
+}
+
+@mixin for-size-1184px {
+  @media (max-width: 74em) {
+    html {
+      font-size: 56% !important;
+    }
+  }
+}
+
+@mixin for-size-1056px {
+  @media (max-width: 66em) {
+    html {
+      font-size: 53% !important;
+    }
+
+    body {
+      letter-spacing: normal !important;
+    }
+  }
+}
+
+@mixin for-size-976px {
+  @media (max-width: 61em) {
+    html {
+      font-size: 50% !important;
+    }
+
+    .section--features {
+      .grid--2-cols {
+        display: flex;
+        flex-direction: column;
+        width: 80rem;
+      }
+
+      .feature-item {
+        height: 15rem !important;
+        width: 15rem !important;
+      }
+    }
+
+    .section--repertoir {
+      height: auto !important;
+      padding-bottom: 20rem;
+      .grid--2-cols {
+        padding-top: 25rem;
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .review {
+      @include centralizeChildrens();
+      height: auto !important;
+      width: 60rem !important;
+    }
+  }
+}
+
+@mixin for-size-848px {
+  @media (max-width: 53em) {
+    html {
+      font-size: 48% !important;
+    }
+
+    .mobile-menu {
+      visibility: visible !important;
+    }
+
+    .links {
+      visibility: hidden;
+      position: absolute;
+      top: 4rem;
+      right: 7rem;
+      display: flex;
+      flex-direction: column;
+
+      .popup {
+        flex-direction: row-reverse;
+      }
+
+      .popup--contact-links {
+        position: relative;
+        transform: translate(-12rem, -1.5rem) !important;
+      }
+    }
+  }
+}
+
+@mixin for-size-656px {
+  @media (max-width: 41em) {
+    html {
+      font-size: 45% !important;
+    }
+
+    .container {
+      max-width: 90rem !important;
+    }
+  }
+}
+
+@mixin for-size-592px {
+  @media (max-width: 37em) {
+    .container {
+      width: 100vw !important;
+      .grid--2-cols {
+        width: 100%;
+      }
+
+      .grid--4-cols {
+        width: 100% !important;
+        align-items: center !important;
+        justify-items: center !important;
+      }
+    }
+
+    .about-section {
+      margin-left: 5rem;
+    }
+
+    .feature-info {
+      width: 80%;
+      align-self: center;
+    }
+
+    .features {
+      display: grid !important;
+      grid-template-columns: repeat(2, 1fr) !important;
+      justify-items: center;
+      align-items: center;
+      gap: 8rem;
+
+      transform: translateY(10rem);
+    }
+
+    .slider-buttons {
+      display: none;
+      visibility: hidden;
+    }
+
+    .dot {
+      height: 3rem !important;
+      width: 3rem !important;
+    }
+
+    .cta-text {
+      width: 90%;
+      font-size: 4.2rem !important;
+      line-height: 40px !important;
+    }
+  }
+}
+
+@mixin for-size-448px {
+  @media (max-width: 28em) {
+    .grid--4-cols {
+      grid-template-columns: repeat(3, 1fr) !important;
+      grid-template-rows: auto !important;
+    }
+
+    .section-title {
+      padding-left: 1rem !important;
+    }
+
+    .repertoir-list {
+      list-style: none;
+      padding-left: 5rem;
+    }
+
+    .slide {
+      width: 95% !important;
+    }
+
+    .review {
+      height: auto !important;
+      width: 95% !important;
+    }
+  }
+}
