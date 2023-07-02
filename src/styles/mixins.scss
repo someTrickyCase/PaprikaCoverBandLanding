@@ -91,6 +91,10 @@
       font-size: 50% !important;
     }
 
+    body {
+      height: auto !important;
+    }
+
     .section--features {
       .grid--2-cols {
         display: flex;
@@ -105,10 +109,10 @@
     }
 
     .section--repertoir {
-      height: auto !important;
+      height: 150vh !important;
       padding-bottom: 20rem;
       .grid--2-cols {
-        padding-top: 25rem;
+        padding-top: 10rem;
         grid-template-columns: 1fr;
       }
     }
@@ -217,9 +221,22 @@
 
 @mixin for-size-448px {
   @media (max-width: 28em) {
+    html {
+      width: 100vw !important;
+    }
+
+    body {
+      position: relative;
+      width: 100% !important;
+    }
+
     .grid--4-cols {
       grid-template-columns: repeat(3, 1fr) !important;
       grid-template-rows: auto !important;
+      width: 80% !important;
+      padding: auto;
+
+      transform: translateY(0) !important;
     }
 
     .section-title {

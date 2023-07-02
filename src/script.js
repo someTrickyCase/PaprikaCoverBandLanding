@@ -80,15 +80,15 @@ const observer = new IntersectionObserver(stikyngNavigation, {
 observer.observe(heroSection);
 
 // show contacts
-navigation.addEventListener("mouseover", (event) => {
-  event.preventDefault();
-  if (!event.target.closest(".popup")) return;
-  contactsPopup.classList.remove("hide");
-});
+// navigation.addEventListener("mouseover", (event) => {
+//   event.preventDefault();
+//   if (!event.target.closest(".popup")) return;
+//   contactsPopup.classList.remove("hide");
+// });
 
-contactsPopup.addEventListener("mouseout", () => {
-  contactsPopup.classList.add("hide");
-});
+// contactsPopup.addEventListener("mouseout", () => {
+//   contactsPopup.classList.add("hide");
+// });
 
 // sections floating into view
 sections.forEach((section) => {
@@ -112,17 +112,38 @@ sections.forEach((section) => {
 // Section Features
 
 featureSection.addEventListener("click", (event) => {
-  if (!event.target.closest(".feature-item")) return;
-  const index = +event.target.closest(".feature-item").dataset.index;
+  const buttons = document.querySelectorAll(".feature-item");
+  const button = event.target.closest(".feature-item");
+  if (!button) return;
+  buttons.forEach((button) => {
+    button.classList.remove("pressed-button");
+  });
+  const index = +button.dataset.index;
 
   featuresContent.forEach((item) => {
-    if (+item.dataset.index === index) item.classList.remove("hide");
-    else item.classList.add("hide");
+    if (+item.dataset.index === index) {
+      item.classList.remove("hide");
+      button.classList.add("pressed-button");
+    } else {
+      item.classList.add("hide");
+    }
   });
 });
 
 // Section Review
+
 let currentSlide = 1;
+
+function slidesPositioning(index) {
+  slides.forEach((slide) => {
+    slide.style.transform = `translateX(${
+      (+slide.dataset.index - index) * 100
+    }%)`;
+  });
+}
+
+slidesPositioning(currentSlide);
+
 document.body.addEventListener("keydown", (event) => {
   if (event.key.toLowerCase() === "arrowright") {
     if (currentSlide !== 4) currentSlide++;
@@ -159,9 +180,13 @@ reviewsSection.addEventListener("click", (event) => {
 
 function changeSlide(index) {
   slides.forEach((slide) => {
-    if (+slide.dataset.index === index) slide.classList.remove("hide");
-    else slide.classList.add("hide");
+    if (+slide.dataset.index === index) {
+      slide.style.transform = `translateX(${
+        (+slide.dataset.index - index) * 100
+      }%)`;
+    }
   });
+  slidesPositioning(index);
 }
 
 function changeDot(index) {

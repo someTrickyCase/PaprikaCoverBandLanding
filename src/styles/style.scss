@@ -22,6 +22,8 @@
 
 html {
   font-size: 62.5%;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 body {
@@ -29,8 +31,8 @@ body {
   @include centralizeChildrens();
   flex-direction: column;
 
-  overflow-y: scroll;
-  overflow-x: hidden;
+  min-height: 500vh;
+  width: 100vw;
 
   background-color: $blackColor;
 }
@@ -39,6 +41,17 @@ body {
   display: none;
   visibility: hidden;
   opacity: 0;
+}
+
+.pressed-button {
+  @include brightShadowTakeOf();
+  transform: scale(1.03) !important;
+  border-color: $mainColor !important;
+  color: $mainColor !important;
+
+  .svg {
+    color: $mainColor !important;
+  }
 }
 
 .section--hidden {
@@ -159,48 +172,6 @@ body {
       height: 20rem;
       border-radius: 10px;
     }
-  }
-}
-
-// ******************************
-// CONTACT POPUP
-// ******************************
-
-.popup {
-  display: flex;
-  flex-direction: column;
-
-  .popup--contact-links {
-    position: absolute;
-    @include centralizeChildrens();
-
-    transform: translate(-3rem, 4rem);
-    transition: all 0.4s linear;
-  }
-
-  .popup--contact-link {
-    width: 5rem;
-    height: 5rem;
-  }
-
-  img {
-    height: 100%;
-    width: 100%;
-
-    &:hover {
-      cursor: pointer;
-    }
-  }
-
-  .VKlogo {
-    transform: translate(25%, 25%);
-    height: 3.3rem;
-    width: 3.3rem;
-  }
-
-  .YouTube-logo {
-    padding-left: 0.5rem;
-    transform: scale(1.4);
   }
 }
 
@@ -327,6 +298,37 @@ body {
 
     z-index: -1000;
   }
+
+  .popup--contact-links {
+    @include centralizeChildrens();
+    margin-top: 5rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .popup--contact-link {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .VKlogo {
+    transform: translate(25%, 25%);
+    height: 3.3rem;
+    width: 3.3rem;
+  }
+
+  .YouTube-logo {
+    padding-left: 0.5rem;
+    transform: scale(1.4);
+  }
 }
 
 // ******************************
@@ -335,7 +337,7 @@ body {
 
 .section {
   @include centralizeChildrens();
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-color: $darkGrayColor;
   border-bottom: 2px solid $middleGrayColor;
@@ -371,7 +373,6 @@ body {
 .feature-info {
   padding: 2rem;
   height: 20rem;
-  // transition: all 0.4s linear;
 }
 
 .feature-title {
@@ -428,6 +429,7 @@ body {
 
 .section--repertoir {
   position: relative;
+  min-height: max-content;
   .about-section {
     position: absolute;
     top: 10%;
@@ -487,6 +489,10 @@ li:not(.category) {
   }
 }
 
+.gallery {
+  margin-top: 10rem;
+}
+
 .grid--4-cols {
   @include centralizeChildrens();
   display: grid;
@@ -526,6 +532,18 @@ li:not(.category) {
   .container {
     @include centralizeChildrens();
     flex-direction: column;
+  }
+
+  .slides-container {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    height: 24rem;
+  }
+
+  .slide {
+    position: absolute;
+    transition: all 0.4s linear;
   }
 
   .about-section {
